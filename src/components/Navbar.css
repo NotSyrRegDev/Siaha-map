@@ -1,0 +1,22 @@
+
+.navbar_area .left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 9912;
+}
+.navbar_area .right {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 9912;
+}
+
+.menu_nav_icon {
+    background: #fff;
+    padding: 2px;
+    border-radius: 250px;
+    cursor: pointer;
+    max-height: 2.8rem;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}

@@ -1,38 +1,56 @@
+ /* 
+
+GOOGLE FONTS : 
+
+font-family: 'Readex Pro', sans-serif;
+font-family: 'Tajawal', sans-serif;
+
+colors :
+
+BLUE COLOR : #2b4865
+
+LIGHT BLUE : #0088b6
+
+WHITE : #ffffff
+
+
+*/
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.a_link {
+  list-style: none;
+  color: inherit;
+  cursor: pointer;
+
+}
+.a_underline {
+  text-decoration: underline;
+}
 .App {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon_small{
+  max-height: 2.5rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.map-wrap {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 77px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  
 }

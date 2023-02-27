@@ -1,0 +1,73 @@
+
+.login_div_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    width: 980px;
+    height: 500px;
+}
+
+.login_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+}
+.image_div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_login_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    max-height: 8rem;
+}
+
+.headline_login {
+    font-family: 'Tajawal';
+    font-size: 42px;
+    
+    font-weight: bold;
+    color: #010101;
+}
+
+.input_form_div {
+    margin: 1.2rem 0;
+}
+.label_form {
+    display: block;
+    font-family: 'Tajawal';
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 0.7rem;
+}
+
+.input_form {
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    padding: 0.4rem 2.2rem;
+    text-align: right;
+    color: #010101;
+    font-family: 'Readex Pro';
+}
+
+.btn_login {
+    background: #f91;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    font-family: 'Tajawal';
+    color: #010101;
+}

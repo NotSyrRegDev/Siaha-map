@@ -1,0 +1,273 @@
+.main_single_location {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    position: fixed;
+    background: #fff;
+    width: 38%;
+    height: 100%;
+    z-index: 9240;
+    top: 0;
+    right: -50%;
+    transition: all 0.2s linear;
+}
+
+.buttons_location_map {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    z-index: 100000;
+}
+
+.buttons_location_map img{
+    margin: 0 8px;
+    z-index: 9912;
+    background: #fff;
+    padding: 2px;
+    border-radius: 250px;
+    cursor: pointer;
+    max-height: 2.8rem;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+.right_toggle_nav {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 9912;
+    background: #fff;
+    padding: 2px;
+    border-radius: 250px;
+    cursor: pointer;
+    max-height: 2.8rem;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+
+
+
+.main_single_location.active {
+    right: 0;
+}
+
+.toggle_nav_icon {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-50% , -50%);
+    z-index: 9912;
+    background: #fff;
+    padding: 2px;
+    border-radius: 250px;
+    cursor: pointer;
+    max-height: 2.8rem;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+
+
+}
+.span_location {
+    font-weight: 400;
+}
+
+
+.main_image {  
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex: 0.7;
+}
+
+
+
+.content-main-image {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+}
+.stars_location {
+   
+    justify-content: center;
+}
+
+.star_icon_small {
+    max-height: 1.2rem;
+    margin:  0 5px;
+}
+
+.subheadline_location {
+    margin-top: 6px;
+    font-family: 'Readex Pro';
+    font-size: 19px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.headline_location {
+    font-family: 'Tajawal';
+    font-size: 42px;
+    
+    font-weight: bold;
+    color: #fff;
+}
+
+.blur_box_location {
+    margin: 0 2.5rem;
+   margin-top: 5rem;
+   padding: 2rem;
+    background: linear-gradient( to right , #ffffffb7 , #ffffff9e );
+}
+
+.btn_explore {
+    background: transparent;
+    padding: 1.2rem 0.6rem;
+    font-family: 'Tajawal';
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+.single_serv_icon {
+    padding: 2rem;
+    background: #fff;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid #01010151;   
+    text-align: center;
+}
+
+.headline_info {
+    color: #010101;
+    font-family: 'Tajawal';
+}
+.services_location_icons {
+    margin-top: 0.5rem;
+}
+.main_slide_two {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.btn_status_location {
+    background: #f91;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    font-family: 'Tajawal';
+    color: #010101;
+}
+
+.location_slidetwo_headline {
+    font-family: 'Tajawal';
+    font-size: 26px;
+    
+    font-weight: bold;
+    color: #010101;
+}
+
+.top_area_slide_two {
+    margin-top: 6rem;
+}
+
+.main_para {
+    font-family: 'Readex Pro';
+    color: #010101;
+    font-size: 16px;
+    line-height: 28px;
+    
+}
+
+.card_slidetwo {
+    max-width: 120px;
+   max-height: 120px;
+}
+
+.single_card_div_slidetwo {
+    position: relative;
+  width: 190px;
+  height: 290px;
+  aspect-ratio: 9/16;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.grid_photos_area {
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 0.5rem;
+}
+
+.single_card_div_slidetwo img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.btn_category {
+    background: #f91;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    font-family: 'Tajawal';
+    color: #010101;
+}
+
+.single_shop {
+    margin: 4rem 0;
+}
+
+.shopping_icon {
+    max-height: 6rem;
+    border: 1px solid #010101;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn_pricing {
+    background: #d31;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    font-family: 'Tajawal';
+ 
+}
+.single_option {
+    justify-content: flex-end;
+    margin: 15px 0;
+   
+}
+
+.single_option p {
+    font-family: 'Readex Pro';
+}
+.option_checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
+}
+
+.grid_invoice_section {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1.5rem;
+}
+.border_b {
+    border-bottom: 2px solid #010101;
+    padding-bottom: 4px;
+}
+
+.btn_pay {
+    background: #f91;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    font-family: 'Tajawal';
+    color: #010101;
+}

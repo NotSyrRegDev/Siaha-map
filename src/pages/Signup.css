@@ -1,0 +1,17 @@
+.signup_div_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    width: 980px;
+    height: 550px;
+} 
+
+.signup_div_box .image_div {
+    flex: 0.4;
+}
+
+.signup_div_box .login_div {
+    flex: 0.6;
+}

@@ -10,7 +10,7 @@ import SingleLocation from '../pages/SingleLocation';
 
 function MapPage() {
 
-      const [ showLocation , setShowLocation ] = useState(true);
+      const [ showLocation , setShowLocation ] = useState(false);
 
   const { coords, isGeolocationAvailable, isGeolocationEnabled } =
   useGeolocated({
@@ -32,7 +32,7 @@ function MapPage() {
      <Notification />
 
      {showLocation && (
-      <SingleLocation />
+      <SingleLocation showActive={true} />
      )}
      
      
@@ -48,11 +48,11 @@ function MapPage() {
     >
    <FullscreenControl />
 
-   <Popup longitude={42.547029} latitude={16.830353}
+   {/* <Popup longitude={42.547029} latitude={16.830353}
         anchor="bottom"
         >
         You are here
-      </Popup>
+      </Popup> */}
      <Marker longitude={42.547029} latitude={16.930353} anchor="bottom" onClick={() => setShowLocation(!showLocation) }  >
       <img className='icon_small' src="/images/icons/place.png" />
     </Marker>

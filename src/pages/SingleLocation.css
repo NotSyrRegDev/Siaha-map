@@ -271,3 +271,40 @@
     font-family: 'Tajawal';
     color: #010101;
 }
+
+@media (max-width: 1100px) {
+    .main_single_location {
+        width: 48%;
+    }
+}
+
+@media (max-width: 900px) {
+    .main_para {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .location_slidetwo_headline {
+        font-size: 20px;
+
+    }
+    .btn_status_location {
+     
+        padding: 0.4rem 1.2rem;
+        font-size: 14px;
+
+    }
+    .single_card_div_slidetwo {
+        position: relative;
+      width: 160px;
+      height: 220px;
+      aspect-ratio: 9/16;
+      overflow: hidden;
+      border-radius: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+
+}

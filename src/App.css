@@ -16,6 +16,12 @@ WHITE : #ffffff
 
 */
 
+.mapboxgl-ctrl-attrib.mapboxgl-compact-show, .maplibregl-ctrl-attrib.maplibregl-compact-show {
+ display: none !important;
+}
+.mapboxgl-ctrl, .maplibregl-ctrl {
+ display: none !important;
+}
 button {
   cursor: pointer;
   outline: none;

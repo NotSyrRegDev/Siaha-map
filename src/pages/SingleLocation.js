@@ -7,7 +7,7 @@ import LocationSlideFour from '../components/LocationSlideFour';
 import LocationSlideFive from '../components/LocationSlideFive';
 
 
-const SingleLocation = () => {
+const SingleLocation = ( { showActive = false } ) => {
 
     const [showing , setShowing] = useState(false);
     const [indexSlide , setIndexSlide] = useState(1);
@@ -55,7 +55,7 @@ const SingleLocation = () => {
    
 
   return (
-    <div className={`main_single_location ${showing && 'active' }`} >
+    <div className={`main_single_location  ${showing && 'active' }`} >
 
         {determineComponent()}
      

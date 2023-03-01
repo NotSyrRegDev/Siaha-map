@@ -6,7 +6,7 @@ const LocationSlideTwo = () => {
 
     <div className='container-mid' >
 
-    <div className="d-flex-c f-sp top_area_slide_two">
+    <div className="d-flex-c f-sp top_area_slide_two f-wrap f-reverse">
         <button className="btn_status_location">جديد</button>
         <h1 className='location_slidetwo_headline' >مهرجان البن الشتوي</h1>
      

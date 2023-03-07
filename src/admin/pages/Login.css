@@ -1,0 +1,26 @@
+.login_fairouza {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50% , -50%);
+}
+
+.container_login_form {
+    background: #fff;
+    border-bottom: 1px solid #010101;
+    box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+    
+     min-width: 800px;
+     padding: 5rem;
+ 
+ }
+ 
+ .container_login_form img {
+     max-height: 5rem;
+ }
+ 
+ .loading_spinner {
+     max-height: 5.5rem;
+ }
+ 
+ 

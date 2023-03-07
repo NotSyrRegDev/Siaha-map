@@ -40,7 +40,7 @@ function MapPage() {
       initialViewState={{
         longitude: coords.longitude,
         latitude: coords.latitude,
-        zoom: 10
+        zoom: 7
       }}
       
       style={{width: "100%", height: " calc(100vh )"}}

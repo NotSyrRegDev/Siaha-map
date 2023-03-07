@@ -2,7 +2,6 @@ import React , {useState}  from 'react';
 import './App.css';
 import { AppProvider } from './context/AppContext';
 import {  BrowserRouter,  Route,   Routes, } from "react-router-dom";
-
 import Loading from './components/Loading';
 import MapPage from './pages/Map';
 import Login from './pages/Login';
@@ -11,6 +10,11 @@ import Home from './pages/Home';
 import JoinUs from './pages/JoinUs';
 import About from './pages/About';
 import Navbar from './components/Navbar';
+import Admin from './admin/Admin';
+import Workers from './admin/pages/Workers';
+import Markers from './admin/pages/Markers';
+import Users from './admin/pages/Users';
+import Notifications from './admin/pages/Notifications';
 
 
 
@@ -22,7 +26,7 @@ const App = () => {
 
   setTimeout(() => {
     setLoadingWeb(false);
-  } , 1500);
+  } , 800);
 
   return (
 
@@ -70,12 +74,61 @@ const App = () => {
                 <JoinUs />
                 }
               />
+
               <Route
                 path="/about"
                 element={
                 <About />
                 }
               />
+
+    <Route
+            
+            path="/dashboard"
+            element={
+              <Admin  />
+            }
+          />
+
+    <Route
+            
+            path="/dashboard/login"
+            element={
+              <Login  />
+            }
+          />
+
+    <Route
+            
+            path="/dashboard/workers"
+            element={
+              <Workers  />
+            }
+          />
+
+    <Route
+            
+            path="/dashboard/markers"
+            element={
+              <Markers  />
+            }
+          />
+
+    <Route
+            
+            path="/dashboard/notifications"
+            element={
+              <Notifications  />
+            }
+          />
+
+    <Route
+            
+            path="/dashboard/users"
+            element={
+              <Users  />
+            }
+          />
                    
            
           </Routes>

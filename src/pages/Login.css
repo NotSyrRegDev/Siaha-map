@@ -1,4 +1,10 @@
 
+.main_login_page {
+    width: 100%;
+    height: 100vh !important;
+    background: linear-gradient( to bottom , rgba(0,0,0,0.7) , rgba(0,0,0,0.3) ) , url('https://i.ibb.co/sVc58QV/329111665-1229633804427912-6684217809801508191-n.jpg') center / cover;
+}
+
 .login_div_box {
     display: flex;
     align-items: center;
@@ -10,14 +16,16 @@
 }
 
 .login_div {
+    direction: rtl;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+  background: #F5F5F5;
+    padding: 1rem 0;
+    padding-bottom: 2.5rem;
 }
 .image_div {
     position: relative;
@@ -50,10 +58,28 @@
     font-size: 18px;
     color: #fff;
     text-align: right;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
+}
+.login_label_form {
+    display: block;
+    font-family: 'Tajawal';
+    font-size: 18px;
+    color: #8A85DB;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.headline_login_form {
+    font-family: 'Tajawal';
+    font-size: 42px;
+    
+    font-weight: bold;
+    color: #3F9B9D;
 }
 
 .input_form {
+    border: 1px solid #01010191;
     background: #fff;
     border-radius: 5px;
     width: 100%;
@@ -64,10 +90,26 @@
     font-family: 'Readex Pro';
 }
 
+.login_input_form {
+    border: 2px solid #8A85DB;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.4rem 2.2rem;
+    text-align: right;
+    color: #010101;
+    font-family: 'Readex Pro';
+}
+
 .btn_login {
-    background: #f91;
+    background: #8A85DB;
     padding: 0.8rem 1.2rem;
     font-size: 16px;
     font-family: 'Tajawal';
-    color: #010101;
+    color: #fff;
+}
+
+.text-green {
+    color: #3F9B9D;
 }

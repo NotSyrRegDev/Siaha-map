@@ -7,11 +7,16 @@ font-family: 'Tajawal', sans-serif;
 
 colors :
 
-BLUE COLOR : #2b4865
+GREEN COLOR : ##72D5A5
 
-LIGHT BLUE : #0088b6
+DARK GREEN COLOR : ##3F9B9D
 
-WHITE : #ffffff
+PURPLE COLOR : ##8A85DB
+
+
+WHITE : ##F5F5F5
+
+YELLOW COLOR : #DFE338
 
 
 */
@@ -47,6 +52,16 @@ input {
 
 .icon_small{
   max-height: 2.5rem;
+  cursor: pointer;
+}
+
+.icon_mid{
+  max-height: 3.5rem;
+  cursor: pointer;
+}
+
+.icon_big{
+  max-height: 4.5rem;
   cursor: pointer;
 }
 

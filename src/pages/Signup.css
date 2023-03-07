@@ -1,9 +1,15 @@
+.main_signup_page {
+    width: 100%;
+    height: 100vh !important;
+    background: linear-gradient( to bottom , rgba(0,0,0,0.7) , rgba(0,0,0,0.3) ) , url('https://i.ibb.co/QHQWFPZ/329002111-150326994524916-5346643032381265656-n.jpg') center / cover;
+
+}
 .signup_div_box {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 5.5rem;
+    margin-top: 5rem;
     width: 980px;
     height: 550px;
 } 

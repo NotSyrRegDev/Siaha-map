@@ -94,6 +94,7 @@ ul { list-style: none;}
 
 
 .mt-1 { margin-top: 1rem !important;}
+.mt-1-small { margin-top: 0.5rem !important;}
 .mt-2 { margin-top: 1.5rem !important;}
 .mt-3 { margin-top: 2rem !important;}
 .mt-4 { margin-top: 3rem !important;}
@@ -169,7 +170,7 @@ ul { list-style: none;}
 .d-flex { display: flex ; }
 .flex-col-c-l { display: flex; flex-direction: column; text-align: left; align-items: flex-start; }
 .f-wrap { flex-wrap: wrap !important; }
-.f-reverse { flex-direction: column-reverse;}
+
 .align-center { align-items: center !important;}
 .flex-cols { display: flex; padding: 1rem;}
 .flex-col-c { flex: 1; text-align: center; padding: 1rem;}

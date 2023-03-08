@@ -22,11 +22,11 @@
 .buttons_location_map img{
     margin: 0 8px;
     z-index: 9912;
-    background: #fff;
-    padding: 2px;
+    background: #72D5A5;
+    padding: 8px;
     border-radius: 250px;
     cursor: pointer;
-    max-height: 2.8rem;
+    max-height: 3rem;
     box-shadow: 0 6px 8px rgba(0,0,0,0.3);
 }
 
@@ -35,11 +35,11 @@
     top: 50%;
     right: 0%;
     z-index: 9912;
-    background: #fff;
-    padding: 2px;
+    background: #72D5A5;
+    padding: 8px;
     border-radius: 250px;
     cursor: pointer;
-    max-height: 2.8rem;
+    max-height: 3rem;
     box-shadow: 0 6px 8px rgba(0,0,0,0.3);
 }
 
@@ -52,15 +52,15 @@
 
 .toggle_nav_icon {
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 5%;
     transform: translate(-50% , -50%);
     z-index: 9912;
-    background: #fff;
-    padding: 2px;
+    background: #72D5A5;
+    padding: 8px;
     border-radius: 250px;
     cursor: pointer;
-    max-height: 2.8rem;
+    max-height: 3rem;
     box-shadow: 0 6px 8px rgba(0,0,0,0.3);
 
 
@@ -77,11 +77,45 @@
     flex: 0.7;
 }
 
+.single_place_section_div {
+    margin-top: 1rem;
+    background: #8A85DB;
+    padding: 0.8rem 0.1rem;
+    color: #fff;
+}
+
+
+.single_place_section_div .section_info_div h1 {
+    font-family: 'Tajawal';
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.single_place_section_div .section_info_div p {
+    font-family: 'Readex Pro';
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.section_img_div {
+    position: relative;
+  width: 130px;
+  height: 130px;
+  aspect-ratio: 9/16;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 
 
 .content-main-image {
     position: absolute;
-    top: 30%;
+    top: 13%;
     left: 0%;
     width: 100%;
 }
@@ -91,29 +125,45 @@
 }
 
 .star_icon_small {
-    max-height: 1.2rem;
+    max-height: 2.2rem;
     margin:  0 5px;
 }
 
 .subheadline_location {
-    margin-top: 6px;
+    
+   
     font-family: 'Readex Pro';
-    font-size: 19px;
+    font-size: 22px;
     font-weight: lighter;
-    color: #fff;
+    color: #3F9B9D;
+}
+
+.blur_info {
+    
+   
+    font-family: 'Readex Pro';
+    font-size: 18px;
+    font-weight: 500;
+    color: #8A85DB;
 }
 
 .headline_location {
     font-family: 'Tajawal';
-    font-size: 42px;
+    font-size: 40px;
     
     font-weight: bold;
-    color: #fff;
+    color: #8A85DB;
+}
+
+.items_images .item_image_location {
+    border-radius: 20px;
+    height: 12rem;
+    width: 12rem;
 }
 
 .blur_box_location {
     margin: 0 2.5rem;
-   margin-top: 5rem;
+   margin-top: 0.5rem;
    padding: 2rem;
     background: linear-gradient( to right , #ffffffb7 , #ffffff9e );
 }
@@ -129,17 +179,18 @@
 }
 
 .single_serv_icon {
-    padding: 2rem;
+    padding: 2.5rem 0.5rem;
     background: #fff;
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 11rem;
     border: 2px solid #01010151;   
     text-align: center;
 }
 
-.headline_info {
-    color: #010101;
+.single_serv_icon .headline_info {
+    color: #8A85DB;
     font-family: 'Tajawal';
+    font-size: 20px;
 }
 .services_location_icons {
     margin-top: 0.5rem;
@@ -151,19 +202,20 @@
 }
 
 .btn_status_location {
-    background: #f91;
-    padding: 0.8rem 1.2rem;
+    display: inline-block;
+    background: #8A85DB;
+    padding: 0.8rem;
     font-size: 16px;
     font-family: 'Tajawal';
-    color: #010101;
+    color: #fff;
 }
 
 .location_slidetwo_headline {
     font-family: 'Tajawal';
-    font-size: 26px;
+    font-size: 24px;
     
     font-weight: bold;
-    color: #010101;
+    color: #8A85DB;
 }
 
 .top_area_slide_two {
@@ -174,6 +226,14 @@
     font-family: 'Readex Pro';
     color: #010101;
     font-size: 16px;
+    line-height: 28px;
+    
+}
+
+.main_para_small {
+    font-family: 'Readex Pro';
+    color: #010101;
+    font-size: 14px;
     line-height: 28px;
     
 }
@@ -196,6 +256,19 @@
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
+.single_card_div_slideone {
+    position: relative;
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 9/16;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
 .grid_photos_area {
     text-align: right;
     display: grid;
@@ -203,7 +276,7 @@
     grid-gap: 0.5rem;
 }
 
-.single_card_div_slidetwo img {
+.single_card_div_slidetwo img , .single_card_div_slideone img , .section_img_div img {
    
     width: 100%;
     height: 100%;
@@ -211,29 +284,65 @@
     
 }
 
+.single_info_blur {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    background: #8A85DB;
+    border-radius: 500px;
+
+}
+
+.single_info_blur img {
+    margin-top: 13px;
+    max-height: 2.5rem;
+}
+
 .btn_category {
-    background: #f91;
+    background: #72D5A5;
     padding: 0.8rem 1.2rem;
     font-size: 16px;
     font-family: 'Tajawal';
-    color: #010101;
+    color: #fff;
+}
+
+.btn_shopping {
+    background: #8A85DB;
+    padding: 0.3rem 0.8rem;
+    font-size: 16px;
+    margin-right: 12px;
+    font-family: 'Tajawal';
+    color: #fff;
 }
 
 .single_shop {
-    margin: 4rem 0;
+    margin: 1.2rem 0;
+    display: flex;
 }
 
+.single_shop .content_shop {
+    margin: 1rem 0;
+    flex: 0.6;
+}
+
+.single_shop .content_iamge {
+    margin: 1rem 0;
+    flex: 0.3;
+}
+
+
 .shopping_icon {
-    max-height: 6rem;
+    max-height: 8rem;
     border: 1px solid #010101;
     border-radius: 5px;
     padding: 5px;
 }
 
 .btn_pricing {
-    background: #d31;
+    background: #72D5A5;
     color: #fff;
-    padding: 0.8rem 1.2rem;
+    padding: 0.3rem 0.8rem;
     font-size: 16px;
     font-family: 'Tajawal';
  
@@ -242,6 +351,10 @@
     justify-content: flex-end;
     margin: 15px 0;
    
+}
+.single_option img {
+    max-height: 1.5rem;
+        margin: 0 0.5rem;
 }
 
 .single_option p {
@@ -265,12 +378,18 @@
 }
 
 .btn_pay {
-    background: #f91;
+    background: #8A85DB;
     padding: 0.8rem 1.2rem;
     font-size: 16px;
     font-family: 'Tajawal';
-    color: #010101;
+    color: #fff;
 }
+
+
+.slide_main_div {
+    background: #f5f5f5;
+}
+
 
 @media (max-width: 1100px) {
     .main_single_location {

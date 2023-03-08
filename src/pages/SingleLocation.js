@@ -60,15 +60,15 @@ const SingleLocation = ( { showActive = false } ) => {
         {determineComponent()}
      
         {showing ? (
-            <img src="/images/icons/right-nav.png" alt="" className="icon_small toggle_nav_icon" onClick={() => setShowing(!showing)}  />
+            <img src="/images/icons/right-arrow.png" alt="" className="icon_small toggle_nav_icon" onClick={() => setShowing(!showing)}  />
         ) : (
-            <img src="/images/icons/left-nav.png" alt="" className=" right_toggle_nav" onClick={() => setShowing(!showing)}  />
+            <img src="/images/icons/left-arrow.png" alt="" className=" right_toggle_nav" onClick={() => setShowing(!showing)}  />
         )}
       
 
         <div className="buttons_location_map">
-            <img src="/images/icons/left-nav.png" className='left_arrrow_location' alt="" onClick={() => handleSliding(-1) } />
-            <img src="/images/icons/right-nav.png" className='right_arrrow_location' alt="" onClick={() => handleSliding(+1) } />
+            <img src="/images/icons/left-arrow.png" className='left_arrrow_location' alt="" onClick={() => handleSliding(-1) } />
+            <img src="/images/icons/right-arrow.png" className='right_arrrow_location' alt="" onClick={() => handleSliding(+1) } />
         </div>
 
     </div>

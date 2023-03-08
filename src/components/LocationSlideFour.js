@@ -1,105 +1,65 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
+import WorkersComponent from './WorkersComponent';
+import { getDocs , collection , db , where , query  } from '../firebase';
 
 const LocationSlideFour = () => {
+
+  const [ workersArray , setWorkersArray ] = useState([]);
+  const [querySearch , setQuerySearch ]  = useState('photographer');
+
+  useEffect(  () => {
+
+    
+    
+
+
+    const getWorkersData = async () => { 
+
+      const q = query(collection(db, "job_seekers"), where("cateogry", "==", querySearch ) );
+   
+    const querySnapshot = await getDocs(q);
+  
+    const workersDataArray = querySnapshot.docs ? querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })) : '';
+
+    
+  
+    setWorkersArray(workersDataArray);
+  
+        
+
+     
+    }
+    getWorkersData();
+  } , [querySearch]);
+
+
   return (
     <div className="main_slide_two">
 
-    <div className='container-mid' >
+    <div className='container-sm' >
 
     <div className="top_area_slide_two"></div>
     <h1 className='location_slidetwo_headline' >  قم برحلتك لهذا المكان معنا</h1>
 
       <div className="d-flex-c f-sv categories_sections mt-2">
+
+        <button className="btn_category" onClick={() => setQuerySearch('photographer') } >مصورين</button>
+
         <button className="btn_category">الفنادق</button>
-        <button className="btn_category">المطاعم</button>
-        <button className="btn_category">كوفيهات</button>
+      
+        <button className="btn_category" onClick={() => setQuerySearch('tour_guide') } >مرشدين</button>
+  
       </div>
 
         <div className="shopping_categories_div mt-5">
 
-            <div className="single_shop d-flex-c f-sp mt-1">
+        {workersArray && (
+          workersArray.map(( { id ,name , image , price , bio , link , job } ) => (
+            <WorkersComponent id={id} name={name} image={image} item_price={price} bio={bio} link={link} job={job} />
+          ))
+        )}
+       
 
-            <div>
-              <img src="/images/icons/car.png" className='shopping_icon' alt="" />
-            </div>
-
-            <div>
-            <h1 className="location_slidetwo_headline">استئجار سيارة</h1>
-
-            <div className="options_shopping text-right">
-
-            <div className="single_option d-flex-c ">           
-              <p>مع سائق : <span className="span_bold">300 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            <div className="single_option d-flex-c ">           
-              <p>بدون سائق : <span className="span_bold">800 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            </div>
-
-            <button className="mt-1 btn_pricing">السعر : <span className="span_bold">1000</span> ريال</button>
-            </div>
-
-            </div>
-
-            <div className="single_shop d-flex-c f-sp mt-1">
-
-            <div>
-              <img src="/images/icons/car.png" className='shopping_icon' alt="" />
-            </div>
-
-            <div>
-            <h1 className="location_slidetwo_headline">استئجار سيارة</h1>
-
-            <div className="options_shopping text-right">
-
-            <div className="single_option d-flex-c ">           
-              <p>مع سائق : <span className="span_bold">300 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            <div className="single_option d-flex-c ">           
-              <p>بدون سائق : <span className="span_bold">800 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            </div>
-
-            <button className="mt-1 btn_pricing">السعر : <span className="span_bold">1000</span> ريال</button>
-            </div>
-
-            </div>
-
-            <div className="single_shop d-flex-c f-sp mt-1">
-
-            <div>
-              <img src="/images/icons/car.png" className='shopping_icon' alt="" />
-            </div>
-
-            <div>
-            <h1 className="location_slidetwo_headline">استئجار سيارة</h1>
-
-            <div className="options_shopping text-right">
-
-            <div className="single_option d-flex-c ">           
-              <p>مع سائق : <span className="span_bold">300 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            <div className="single_option d-flex-c ">           
-              <p>بدون سائق : <span className="span_bold">800 ريال</span> </p>
-              <input type="checkbox" className="option_checkbox" />      
-            </div>
-
-            </div>
-
-            <button className="mt-1 btn_pricing">السعر : <span className="span_bold">1000</span> ريال</button>
-            </div>
-
-            </div>
 
         </div>
 

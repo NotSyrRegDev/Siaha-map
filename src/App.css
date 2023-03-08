@@ -36,6 +36,12 @@ input {
   outline: none;
   border: none;
 }
+.borderd_map_icon {
+  border: 3px solid #010101;
+  padding: 5px;
+  background: #fff;
+  border-radius: 500px;
+}
 .a_link {
   list-style: none;
   color: inherit;

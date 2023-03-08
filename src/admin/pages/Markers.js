@@ -36,6 +36,7 @@ function Markers (  ) {
     const [markerSections , setMarkerSections ] = useState('');
   
     const [markerStars , setMarkerStars ] = useState('');
+    const [markerLocation , setMarkerLocation ] = useState('');
 
     const [markerId , setMarkerId ] = useState('');
 
@@ -118,6 +119,9 @@ function Markers (  ) {
      if (markerStars === ''  ) {
       setError(' يرجى ادخال عدد نجوم تقييم العلامة ');
      }
+     if (markerLocation === ''  ) {
+        setError(' يرجى ادخال موقع العلامة ');
+        }
 
    
 
@@ -132,9 +136,10 @@ function Markers (  ) {
               lattiude: markerLattiude,
               langitude: markerLangitude,
               photos :  markerPhotos,
-              sections : [],
+              sections : markerSections,
  
               stars : markerStars,
+              location: markerLocation
               
              
               });
@@ -153,7 +158,7 @@ function Markers (  ) {
         }
     }
 
-    const updateShownMethod = ( name , icon , category , description , lattiude , langitude , stars    , id ) => {
+    const updateShownMethod = ( name , icon , category , description , lattiude , langitude , stars    , location , id ) => {
 
         setMarkerName(name);
         setMarkerIcon(icon);
@@ -162,7 +167,7 @@ function Markers (  ) {
         setMarkerLattiude(lattiude);
         setMarkerLangitude(langitude);
         setMarkerStars(stars);
-  
+        setMarkerLocation(location);
      
         setMarkerId(id);
     
@@ -171,7 +176,7 @@ function Markers (  ) {
         determineShow('update');
       }
 
-      const deleteShowMethod = ( name , icon , category , description , lattiude , langitude , stars    , id ) => {
+      const deleteShowMethod = ( name , icon , category , description , lattiude , langitude , stars    , location , id ) => {
 
         setMarkerName(name);
         setMarkerIcon(icon);
@@ -180,6 +185,7 @@ function Markers (  ) {
         setMarkerLattiude(lattiude);
         setMarkerLangitude(langitude);
         setMarkerStars(stars);
+        setMarkerLocation(location);
      
         setMarkerId(id);
     
@@ -198,6 +204,7 @@ function Markers (  ) {
                 setMarkerDescription('');
                 setMarkerLattiude('');
                 setMarkerLangitude('');
+                setMarkerLocation('');
                 setMarkerStars('');
                 setTableShow(true);
                 setAddShow(false);
@@ -244,6 +251,7 @@ function Markers (  ) {
       // sections []
 
       stars : markerStars,
+      location: markerLocation
     };
     
     if (markerName === ''  ) {
@@ -273,6 +281,10 @@ setError(' يرجى ادخال احداثيات واي العلامة ');
 
 if (markerStars === ''  ) {
 setError(' يرجى ادخال عدد نجوم تقييم العلامة ');
+}
+
+if (markerLocation === ''  ) {
+setError(' يرجى ادخال موقع العلامة ');
 }
 
 
@@ -419,6 +431,12 @@ setError(' يرجى ادخال عدد نجوم تقييم العلامة ');
             </div>
 
             <div className="action_form_div">
+            <label htmlFor="name" className="label_form mx-1 mb-1">   موقع المكان </label>
+               
+                <input value={markerLocation} onChange={ (e) => setMarkerLocation(e.target.value)  } type="text" id='name' className="input_form" placeholder='موقع المكان...' />
+            </div>
+
+            <div className="action_form_div">
             <label htmlFor="name" className="label_form mx-1 mb-1"> تقييم مكان العلامة </label>
             <select required name="stars" id="stars" value={markerStars} className="input_form" onChange={(e) => {
         const selectedStar = e.target.value;
@@ -524,6 +542,12 @@ setError(' يرجى ادخال عدد نجوم تقييم العلامة ');
             </div>
 
             <div className="action_form_div">
+            <label htmlFor="name" className="label_form mx-1 mb-1">   موقع المكان </label>
+               
+                <input value={markerLocation} onChange={ (e) => setMarkerLocation(e.target.value)  } type="text" id='name' className="input_form" placeholder='موقع المكان...' />
+            </div>
+
+            <div className="action_form_div">
             <label htmlFor="name" className="label_form mx-1 mb-1"> تقييم مكان العلامة </label>
             <select required name="stars" id="stars" value={markerStars} className="input_form" onChange={(e) => {
         const selectedStar = e.target.value;
@@ -624,8 +648,8 @@ setError(' يرجى ادخال عدد نجوم تقييم العلامة ');
                              <td className='table_item_sm' > {item.category} </td>
                              <td className='table_item_sm' > {item.stars} </td>
                             <td className='d-flex-c' >
-                            <button className="edit_btn_admin" onClick={() => updateShownMethod(  item.name , item.icon , item.category , item.description , item.lattiude , item.langitude , item.stars    , item.id   )  }  >تعديل</button>
-                            <button className="delete_btn_admin" onClick={() => deleteShowMethod( item.name , item.icon , item.category , item.description , item.lattiude , item.langitude , item.stars    , item.id ) } >حذف</button>
+                            <button className="edit_btn_admin" onClick={() => updateShownMethod(  item.name , item.icon , item.category , item.description , item.lattiude , item.langitude , item.stars    , item.location , item.id   )  }  >تعديل</button>
+                            <button className="delete_btn_admin" onClick={() => deleteShowMethod( item.name , item.icon , item.category , item.description , item.lattiude , item.langitude , item.stars    , item.location  , item.id ) } >حذف</button>
                             </td>
 
                         </tr>

@@ -66,20 +66,21 @@ function MapPage() {
     <div>Geolocation is not enabled</div>
 ) : coords ? (
   <>
+  
       <div className="App">
    
-     <Notification setShowLocation={setShowLocation} />
+     <Notification showLocation={showLocation} setShowLocation={setShowLocation} />
 
      {showLocation && (
-      <SingleLocation showActive={true} />
+      <SingleLocation showActive={showLocation} />
      )}
      
      
     <Map mapLib={maplibregl} 
       initialViewState={{
-        longitude: coords.longitude,
-        latitude: coords.latitude,
-        zoom: 7
+        longitude: 42.5579758,
+        latitude: 16.894719,
+        zoom: 6.9
       }}
       
       style={{width: "100%", height: " calc(100vh )"}}

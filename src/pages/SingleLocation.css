@@ -8,7 +8,7 @@
     height: 100%;
     z-index: 9240;
     top: 0;
-    right: -50%;
+    left: -50%;
     transition: all 0.2s linear;
 }
 
@@ -33,7 +33,7 @@
 .right_toggle_nav {
     position: fixed;
     top: 50%;
-    right: 0%;
+    left: 0%;
     z-index: 9912;
     background: #72D5A5;
     padding: 8px;
@@ -47,13 +47,15 @@
 
 
 .main_single_location.active {
-    right: 0;
+    left: 0;
 }
-
+.r-direction {
+    direction: rtl;
+}
 .toggle_nav_icon {
     position: absolute;
     top: 7%;
-    left: 5%;
+    right: 5%;
     transform: translate(-50% , -50%);
     z-index: 9912;
     background: #72D5A5;

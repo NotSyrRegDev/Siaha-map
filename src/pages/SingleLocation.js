@@ -1,4 +1,4 @@
-import React , {useState , useEffect} from 'react';
+import React , {useState } from 'react';
 import LocationSlideOne from '../components/LocationSlideOne';
 import LocationSlideTwo from '../components/LocationSlideTwo';
 import LocationSlideThree from '../components/LocationSlideThree';
@@ -7,9 +7,9 @@ import LocationSlideFour from '../components/LocationSlideFour';
 import LocationSlideFive from '../components/LocationSlideFive';
 
 
-const SingleLocation = ( { showActive = false } ) => {
+const SingleLocation = (  ) => {
 
-    const [showing , setShowing] = useState(false);
+    const [showing , setShowing] = useState(true);
     const [indexSlide , setIndexSlide] = useState(1);
 
     
@@ -60,9 +60,9 @@ const SingleLocation = ( { showActive = false } ) => {
         {determineComponent()}
      
         {showing ? (
-            <img src="/images/icons/right-arrow.png" alt="" className="icon_small toggle_nav_icon" onClick={() => setShowing(!showing)}  />
+            <img src="/images/icons/left-arrow.png" alt="" className="icon_small toggle_nav_icon" onClick={() => setShowing(!showing)}  />
         ) : (
-            <img src="/images/icons/left-arrow.png" alt="" className=" right_toggle_nav" onClick={() => setShowing(!showing)}  />
+            <img src="/images/icons/right-arrow.png" alt="" className=" right_toggle_nav" onClick={() => setShowing(!showing)}  />
         )}
       
 
